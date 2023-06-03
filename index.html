@@ -25,7 +25,6 @@
   <p>Click the button below to send a text message to TMoney Entertainment with Your Song Request:</p>
   
   <button onclick="sendTextMessage()">Send Your Song!</button>
-
   <script>
     function sendTextMessage() {
       var phoneNumber = '3135106720'; // Replace with the desired phone number
@@ -33,6 +32,8 @@
       window.location.href = 'sms:' + phoneNumber;
     }
   </script>
+<p>
+</p>
 </body>
   <table>
     <thead>
@@ -68,8 +69,80 @@
         <td><a href="https://www.youtube.com/watch?v=M7Qg5H0luo0">YouTube Link</a></td>
       </tr>
     </tbody>
+<tbody>
+      <tr>
+        <td>Avril Lavigne</td>
+        <td>"Complicated"</td>
+        <td>2002</td>
+        <td><a href="https://www.youtube.com/watch?v=vnsZ6VrprHw">YouTube Link</a></td>
+      </tr>
+    </tbody>
+<tbody>
+      <tr>
+        <td>BB King</td>
+        <td>"The Thrill Is Gone"</td>
+        <td>1969</td>
+        <td><a href="https://www.youtube.com/watch?v=2Z00WNQAyao">YouTube Link</a></td>
+      </tr>
+    </tbody>
   </table>
 </body>
-
-
 </html>
+
+
+<!// Testing JS Script to automatically generate HTML code for songs>
+<html>
+<head>
+  <title>Song List</title>
+  <script>
+    // Your JavaScript code here
+var songs = [
+var song1 = {
+  artist: “Avril Lavigne",
+  title: "Complicated",
+  year: 2002,
+  youtubeLink: "https://www.youtube.com/watch?v=vnsZ6VrprHw"
+};
+
+var song2 = {
+  artist: "B.B. King",
+  title: "The Thrill Is Gone",
+  year: 1969,
+  youtubeLink: "https://www.youtube.com/watch?v=2Z00WNQAyao"
+};
+
+songs.push(song1, song2)];;
+
+songs.forEach(function(song) {
+  var row = document.createElement("tr");
+
+  var artistCell = document.createElement("td");
+  artistCell.textContent = song.artist;
+  row.appendChild(artistCell);
+
+  var titleCell = document.createElement("td");
+  titleCell.textContent = song.title;
+  row.appendChild(titleCell);
+
+  var yearCell = document.createElement("td");
+  yearCell.textContent = song.year;
+  row.appendChild(yearCell);
+
+  var linkCell = document.createElement("td");
+  var youtubeLink = document.createElement("a");
+  youtubeLink.href = song.youtubeLink;
+  youtubeLink.textContent = "YouTube Link";
+  linkCell.appendChild(youtubeLink);
+  row.appendChild(linkCell);
+
+  // Append the row to a table body element
+  var tableBody = document.getElementById("table-body");
+  tableBody.appendChild(row);
+});
+</script>
+</head>
+<table>
+  <tbody id="table-body">
+    <!-- The song entries will be dynamically generated here -->
+  </tbody>
+</table>
