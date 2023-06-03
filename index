@@ -20,7 +20,7 @@
   </style>
 </head>
 <body>
-  <h1>Digital Karaoke Songbook</h1>
+  <h1>Terin's Digital Karaoke Songbook</h1>
   <table>
     <thead>
       <tr>
@@ -33,10 +33,26 @@
     <tbody>
       <!-- Add your song entries here -->
       <tr>
-        <td>Artist Name</td>
-        <td>Song Title</td>
+        <td>Adele</td>
+        <td>"Rolling in the Deep"</td>
+        <td>Year</td>
+        <td><a href="https://www.youtube.com/watch?v=B3O1OlTWXSA">YouTube Link</a></td>
+      </tr>
+    </tbody>
+<tbody>
+      <tr>
+        <td>Adele</td>
+        <td>"Someone Like You"</td>
         <td>Year</td>
         <td><a href="https://www.youtube.com/watch?v=VIDEO_ID">YouTube Link</a></td>
+      </tr>
+    </tbody>
+<tbody>
+      <tr>
+        <td>Adele</td>
+        <td>"Easy on Me"</td>
+        <td>Year</td>
+        <td><a href="https://www.youtube.com/watch?v=M7Qg5H0luo0">YouTube Link</a></td>
       </tr>
     </tbody>
   </table>
