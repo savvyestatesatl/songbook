@@ -21,6 +21,19 @@
 </head>
 <body>
   <h1>TMoney Entertainment Digital Karaoke Songbook</h1>
+  
+  <p>Click the button below to send a text message to TMoney Entertainment with Your Song Request:</p>
+  
+  <button onclick="sendTextMessage()">Send Your Song!</button>
+
+  <script>
+    function sendTextMessage() {
+      var phoneNumber = '3135106720'; // Replace with the desired phone number
+
+      window.location.href = 'sms:' + phoneNumber;
+    }
+  </script>
+</body>
   <table>
     <thead>
       <tr>
@@ -57,4 +70,6 @@
     </tbody>
   </table>
 </body>
+
+
 </html>
