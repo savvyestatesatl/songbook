@@ -1,4 +1,67 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>TMONEY Entertainment Karaoke Songs</title>
+</head>
+<body>
+  <header>
+    <h1>TMONEY ENTERTAINMENT KARAOKE SONGS</h1>
+  </header>
+  <!-- Rest of your website content goes here -->
+</body>
+</html>
+
+<html>
+<head>
+  <title>Search Box Example</title>
+  <style>
+    .search-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .search-box {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    
+    .search-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+    }
+  </style>
+  <script>
+    function searchPage() {
+      var searchQuery = document.getElementById("search-input").value;
+      var content = document.getElementById("content").innerHTML;
+      
+      if (content.includes(searchQuery)) {
+        alert("Text found on the page!");
+      } else {
+        alert("Text not found on the page.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="search-container">
+    <input type="text" id="search-input" class="search-box" placeholder="Enter your search term...">
+    <button type="button" class="search-button" onclick="searchPage()">Search</button>
+  </div>
+  
+  <div id="content">
+    <!-- Content of your webpage goes here -->
+  </div>
+</body>
+</html>
+
+
 <html xmlns:v="urn:schemas-microsoft-com:vml"
 xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:x="urn:schemas-microsoft-com:office:excel"
