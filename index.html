@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Password Protected Page</title>
+    <script>
+        function checkPassword() {
+            var password = prompt("Please enter the password:");
+            if (password === "KARAOKE123") {
+                // Correct password, continue to display the page
+            } else {
+                // Incorrect password, redirect to an error page or display an error message
+                window.location.href = "error.html"; // Replace with your desired error page URL
+            }
+        }
+    </script>
+</head>
+<body onload="checkPassword()">
+
+    <!-- Your existing HTML content goes here -->
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
   <title>Savvy Estates Digital Karaoke Songbook</title>
   <style>
     table {
@@ -35,7 +58,6 @@
     </thead>
       <!-- Add your song entries here -->
 <!// COPY AND PASTE FROM GOOGLE SHEETS KARAOKE SONGS>
-HTML CODE
 <tbody><tr><td>112</td><td>Dance with Me</td><td>1996</td><td><a href=https://www.youtube.com/results?search_query=112+karaoke+Dance+with+Me>YouTube Link</a></td></tr></tbody>
 <tbody><tr><td>112</td><td>Cupid</td><td>1997</td><td><a href=https://www.youtube.com/results?search_query=112+karaoke+Cupid>YouTube Link</a></td></tr></tbody>
 <tbody><tr><td>112</td><td>It's Over Now</td><td>2000</td><td><a href=https://www.youtube.com/results?search_query=112+karaoke+It's+Over+Now>YouTube Link</a></td></tr></tbody>
